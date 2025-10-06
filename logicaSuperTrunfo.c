@@ -159,7 +159,7 @@ int main(){
 
   //PIB per Capita (maior vence)
   int Resultado_PIB_Per_Capita = (PIB_Per_Capita1 > PIB_Per_Capita2)? 1 : 0;
-  printf("PIB per Capita: Carta %d venceu (%d)\n", Resultado_PIB_Per_Capita ? 1 : 2, Resultado_PIB_Per_Capita);
+  printf("PIB per Capita: Carta %d venceu (%d)\n\n", Resultado_PIB_Per_Capita ? 1 : 2, Resultado_PIB_Per_Capita);
 
   //Comparação com IF e ELSE
 
