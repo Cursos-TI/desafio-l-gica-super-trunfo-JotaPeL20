@@ -1,25 +1,185 @@
-#include <stdio.h>
+#include <stdio.h>  
 
-// Desafio Super Trunfo - Países
-// Tema 2 - Comparação das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de comparação de cartas de cidades. 
-// Siga os comentários para implementar cada parte do desafio.
-
-int main() {
-    // Definição das variáveis para armazenar as propriedades das cidades
-    // Você pode utilizar o código do primeiro desafio
-
+int main(){
     
-    // Cadastro das Cartas:
-    // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
-    // utilizando a função scanf para capturar as entradas.
-    // utilize o código do primeiro desafio
+    
+  // Variáveis primeira carta
+  char Estado1;
+  char Codigo_da_carta1[4];
+  char Nome_da_cidade1[50];
+  unsigned long int Populacao1;
+  unsigned int Pontos_Turisticos1;
+  float Area1, PIB1;
+  float PIB_Per_Capita1, Densidade_Populacional1;
+  float SuperPoder1;
 
-    // Exemplo:
-    // printf("Digite o código da cidade: ");
-    // scanf("%s", codigo);
-    // 
-    // (Repita para cada propriedade)
+  // Variáveis segunda carta
+  char Estado2;
+  char Codigo_da_carta2[4];
+  char Nome_da_cidade2[50];
+  unsigned long int Populacao2;
+  unsigned int Pontos_Turisticos2;
+  float Area2, PIB2;
+  float PIB_Per_Capita2, Densidade_Populacional2;
+  float SuperPoder2;
+
+  // Cabeçalho do jogo
+
+  printf("SUPER TRUNFO DE PAÍSES - CADASTRO DE CARTAS\n\n");
+
+  // Leitura de dados da primeira carta
+  printf("Registre a sua carta 1\n\n");
+
+  printf("Digite o Estado (A-H): "); 
+  scanf("%c", &Estado1); //O jogador irá digitar a letra correspondente ao Estado
+
+  printf("Digite o Código da Carta(ex: A01): "); 
+  scanf("%s", Codigo_da_carta1); //O jogador irá digitar o código da carta
+
+  printf("Digite o Nome da Cidade: "); 
+  scanf("%s", Nome_da_cidade1); //O jogador irá digitar o nome da cidade presente na carta
+
+  printf("Digite a População: "); 
+  scanf("%lu", &Populacao1); //O jogador irá digitar a populaçao da cidade
+
+  printf("Digite a Área da Cidade (km²): ");  
+  scanf("%f", &Area1); //O jogador irá digitar a área da cidade
+
+  printf("Digite o PIB (bilhões de reais): "); 
+  scanf("%f", &PIB1); //O jogador irá digitar o PIB da cidade
+
+  printf("Digite o número de Pontos Turísticos: "); 
+  scanf("%u", &Pontos_Turisticos1); //O jogador irá digitar o numero de pontos turísticos da cidade
+
+  // Cálculos após a leitura dos dados
+
+  PIB_Per_Capita1 = (float) (PIB1 * 1000000000) / Populacao1; //Usando a conversão explícita para float e convertendo bilhões em unidades
+  Densidade_Populacional1 = (float) Populacao1 / Area1;
+  
+  //Cálculo do SuperPoder1 com o inverso da densidade
+
+  float Inverso_Densidade_Populacional1 = Area1 / Populacao1;
+  SuperPoder1 = (float) Populacao1 + Area1 + (PIB1 * 1000000000) + Pontos_Turisticos1 + PIB_Per_Capita1 + Inverso_Densidade_Populacional1;
+  
+  printf("\n\n");
+
+  // Leitura de dados da segunda carta
+
+  printf("Registre a sua carta 2\n\n");
+
+  printf("Digite o Estado (A-H): "); 
+  scanf(" %c", &Estado2); //O jogador irá digitar a letra correspondente ao Estado
+
+  printf("Digite o Código da Carta (ex: A01): "); 
+  scanf("%s", Codigo_da_carta2); //O jogador irá digitar o código da carta
+
+  printf("Digite o Nome da Cidade: "); 
+  scanf("%s", Nome_da_cidade2); //O jogador irá digitar o nome da cidade presente na carta
+
+  printf("Digite a População: "); 
+  scanf("%lu", &Populacao2); //O jogador irá digitar a populaçao da cidade
+
+  printf("Digite a Área da Cidade (km²): "); 
+  scanf("%f", &Area2); //O jogador irá digitar a área da cidade
+
+  printf("Digite o PIB (bilhões de reais): "); 
+  scanf("%f", &PIB2); //O jogador irá digitar o PIB da cidade
+
+  printf("Digite o N° de Pontos Turísticos: "); 
+  scanf("%u", &Pontos_Turisticos2); //O jogador irá digitar o numero de pontos turísticos da cidade
+
+  printf("\n\n");
+
+  // Cálculos após a leitura dos dados
+  PIB_Per_Capita2 = (float) (PIB2 * 1000000000) / Populacao2; //Usando a conversão explícita para float e convertendo bilhões em unidades
+  Densidade_Populacional2 = (float) Populacao2 / Area2;
+  
+  //Cálculo do SuperPoder2 com o inverso da densidade
+  float Inverso_Densidade_Populacional2 = Area2 / Populacao2;
+  SuperPoder2 = (float) Populacao2 + Area2 + (PIB2 * 1000000000) + Pontos_Turisticos2 + PIB_Per_Capita2 + Inverso_Densidade_Populacional2;
+  
+  // Exibição das cartas cadastradas
+    
+  printf("CARTAS CADASTRADAS\n\n");
+
+  // Carta 1 
+
+  printf("Carta 1\n"); 
+  printf("Estado: %c\n", Estado1);
+  printf("Código: %s\n", Codigo_da_carta1);
+  printf("Nome da Cidade: %s\n", Nome_da_cidade1);
+  printf("População: %lu habitantes\n", Populacao1);
+  printf("Área: %.2f Km²\n", Area1);
+  printf("PIB: %.2f bilhões de reais\n", PIB1);
+  printf("Número de Pontos Turísticos: %u\n", Pontos_Turisticos1);
+  printf("Densidade Populacional: %.2f hab/km²\n", Densidade_Populacional1);
+  printf("PIB per Capita: %.2f reais\n", PIB_Per_Capita1);
+  printf("Super Poder: %.2f\n", SuperPoder1);
+  printf("\n");
+    
+  // Carta 2
+
+  printf("Carta 2\n");  
+  printf("Estado: %c\n", Estado2);
+  printf("Código: %s\n", Codigo_da_carta2);
+  printf("Nome da Cidade: %s\n", Nome_da_cidade2);
+  printf("População: %lu habitantes\n", Populacao2);
+  printf("Área: %.2f Km²\n", Area2);
+  printf("PIB: %.2f bilhões de reais\n", PIB2);
+  printf("Número de Pontos Turísticos: %u\n", Pontos_Turisticos2);
+  printf("Densidade Populacional: %.2f hab/km²\n", Densidade_Populacional2);
+  printf("PIB per Capita: %.2f reais\n", PIB_Per_Capita2);
+  printf("Super Poder: %.2f\n", SuperPoder2);
+  printf("\n");
+
+
+  //Comparação das cartas 
+  
+  printf("COMPARAÇÃO DAS CARTAS\n\n");
+
+  // População (maior vence)
+  int Resultado_Populacao = (Populacao1 > Populacao2)? 1 : 0;
+  printf("População: Carta %d venceu (%d)\n", Resultado_Populacao ? 1 : 2, Resultado_Populacao);
+
+  // Área (maior vence)
+  int Resultado_Area = (Area1 > Area2)? 1 : 0;
+  printf("Área: Carta %d venceu (%d)\n", Resultado_Area ? 1 : 2, Resultado_Area);
+
+  //PIB (maior vence)
+  int Resultado_PIB = (PIB1 > PIB2)? 1 : 0;
+  printf("PIB: Carta %d venceu (%d)\n", Resultado_PIB ? 1 : 2, Resultado_PIB);
+
+  //Pontos Turísticos (maior vence)
+  int Resultado_Pontos_Turisticos = (Pontos_Turisticos1 > Pontos_Turisticos2)? 1 : 0;
+  printf("Pontos Turísticos: Carta %d venceu (%d)\n", Resultado_Pontos_Turisticos ? 1 : 2, Resultado_Pontos_Turisticos);
+
+  //Densidade Populacional (menor vence)
+  int Resultado_Densidade_Populacional = (Densidade_Populacional1 < Densidade_Populacional2)? 1 : 0;
+  printf("Densidade Populacional: Carta %d venceu (%d)\n", Resultado_Densidade_Populacional ? 1 : 2, Resultado_Densidade_Populacional);
+
+  //PIB per Capita (maior vence)
+  int Resultado_PIB_Per_Capita = (PIB_Per_Capita1 > PIB_Per_Capita2)? 1 : 0;
+  printf("PIB per Capita: Carta %d venceu (%d)\n", Resultado_PIB_Per_Capita ? 1 : 2, Resultado_PIB_Per_Capita);
+
+  //Comparação com IF e ELSE
+
+  printf("COMPARAÇÃO DO SUPER PODER\n\n");
+
+  if (SuperPoder1 > SuperPoder2) {
+    printf("O SUPERPODER da Carta 1 é maior!\n");
+  } else {
+    printf("O SUPERPODER da Carta 2 é maior!\n");
+  }
+  
+  
+
+
+
+
+  return 0;
+
+
+}
 
     // Comparação de Cartas:
     // Desenvolva a lógica de comparação entre duas cartas.
@@ -39,5 +199,3 @@ int main() {
     // Exemplo:
     // printf("A cidade vencedora é: %s\n", cidadeVencedora);
 
-    return 0;
-}
