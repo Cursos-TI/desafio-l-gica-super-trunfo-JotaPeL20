@@ -37,7 +37,7 @@ int main(){
   scanf("%s", Codigo_da_carta1); //O jogador irá digitar o código da carta
 
   printf("Digite o Nome da Cidade: "); 
-  scanf("%s", Nome_da_cidade1); //O jogador irá digitar o nome da cidade presente na carta
+  scanf(" %[^\n]", Nome_da_cidade1); //O jogador irá digitar o nome da cidade presente na carta
 
   printf("Digite a População: "); 
   scanf("%lu", &Populacao1); //O jogador irá digitar a populaçao da cidade
@@ -74,7 +74,7 @@ int main(){
   scanf("%s", Codigo_da_carta2); //O jogador irá digitar o código da carta
 
   printf("Digite o Nome da Cidade: "); 
-  scanf("%s", Nome_da_cidade2); //O jogador irá digitar o nome da cidade presente na carta
+  scanf(" %[^\n]", Nome_da_cidade2); //O jogador irá digitar o nome da cidade presente na carta
 
   printf("Digite a População: "); 
   scanf("%lu", &Populacao2); //O jogador irá digitar a populaçao da cidade
