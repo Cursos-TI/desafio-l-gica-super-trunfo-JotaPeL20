@@ -169,14 +169,10 @@ int main(){
   printf("Carta 2 - %s : %.2f\n", Nome_da_cidade2, SuperPoder2);
 
   if (SuperPoder1 > SuperPoder2) {
-    printf("O SUPERPODER da Carta 1 é maior!\n");
+    printf("O SUPER PODER da Carta 1 é maior!\n");
   } else {
-    printf("O SUPERPODER da Carta 2 é maior!\n");
+    printf("O SUPER PODER da Carta 2 é maior!\n");
   }
-  
-  
-
-
 
 
   return 0;
