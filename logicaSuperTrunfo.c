@@ -163,7 +163,10 @@ int main(){
 
   //Comparação com IF e ELSE
 
-  printf("COMPARAÇÃO DO SUPER PODER\n\n");
+  printf("COMPARAÇÃO DAS CARTAS ATRIBUTO(SUPER PODER)\n\n");
+
+  printf("Carta 1 - %s : %.2f\n", Nome_da_cidade1, SuperPoder1);
+  printf("Carta 2 - %s : %.2f\n", Nome_da_cidade2, SuperPoder2);
 
   if (SuperPoder1 > SuperPoder2) {
     printf("O SUPERPODER da Carta 1 é maior!\n");
