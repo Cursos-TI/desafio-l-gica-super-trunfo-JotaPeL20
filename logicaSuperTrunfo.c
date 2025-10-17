@@ -197,7 +197,7 @@ int main(){
   if (Densidade_Populacional1 < Densidade_Populacional2) {
     printf("A Carta 1(São Paulo) venceu!\n");
   } else {
-    printf("A Carta 2(Rio de Janeiro) venceu!\n\n");
+    printf("A Carta 2(Rio de Janeiro) venceu!\n");
   }
 
   printf("\n\n");
