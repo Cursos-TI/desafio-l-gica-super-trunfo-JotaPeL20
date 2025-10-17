@@ -183,7 +183,7 @@ int main(){
 
   printf("ATRIBUTO - DENSIDADE POPULACIONAL\n\n");
 
-  printf("Carta 1 - %s : %.2f\n", Nome_da_cidade1, Densidade_Populacional1;
+  printf("Carta 1 - %s : %.2f\n", Nome_da_cidade1, Densidade_Populacional1);
   printf("Carta 2 - %s : %.2f\n", Nome_da_cidade2, Densidade_Populacional2);
 
   if (Densidade_Populacional1 < Densidade_Populacional2) {
