@@ -148,6 +148,8 @@ int main(){
     printf("A Carta 2(Rio de Janeiro) venceu!\n\n");
   }
   
+  printf("\n\n");
+
   printf("ATRIBUTO - ÁREA\n\n");
 
   printf("Carta 1 - %s : %.2f\n", Nome_da_cidade1, Area1);
@@ -159,6 +161,8 @@ int main(){
     printf("A Carta 2(Rio de Janeiro) venceu!\n\n");
   }
   
+  printf("\n\n");
+
   printf("ATRIBUTO - PIB\n\n");
 
   printf("Carta 1 - %s : %.2f\n", Nome_da_cidade1, PIB1);
@@ -169,6 +173,8 @@ int main(){
   } else {
     printf("A Carta 2(Rio de Janeiro) venceu!\n\n");
   }
+
+  printf("\n\n");
 
   printf("ATRIBUTO - NÚMERO DE PONTOS TURÍSTICOS\n\n");
 
@@ -181,6 +187,8 @@ int main(){
     printf("A Carta 2(Rio de Janeiro) venceu!\n\n");
   }
 
+  printf("\n\n");
+
   printf("ATRIBUTO - DENSIDADE POPULACIONAL\n\n");
 
   printf("Carta 1 - %s : %.2f\n", Nome_da_cidade1, Densidade_Populacional1);
@@ -192,6 +200,8 @@ int main(){
     printf("A Carta 2(Rio de Janeiro) venceu!\n\n");
   }
 
+  printf("\n\n");
+
   printf("ATRIBUTO - PIB PER CAPITA\n\n");
 
   printf("Carta 1 - %s : %.2f\n", Nome_da_cidade1, PIB_Per_Capita1);
@@ -200,8 +210,10 @@ int main(){
   if (PIB_Per_Capita1 > PIB_Per_Capita2) {
     printf("A Carta 1(São Paulo) venceu!\n");
   } else {
-    printf("A Carta 2(Rio de Janeiro) venceu!\n\n");
+    printf("A Carta 2(Rio de Janeiro) venceu!\n");
   }
+
+  printf("\n\n");
 
   printf("ATRIBUTO - SUPER PODER\n\n");
 
