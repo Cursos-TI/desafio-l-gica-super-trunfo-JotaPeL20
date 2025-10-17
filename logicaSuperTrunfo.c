@@ -211,7 +211,7 @@ int main(){
   if (SuperPoder1 > SuperPoder2) {
     printf("A Carta 1(São Paulo) venceu!\n");
   } else {
-    printf("A Carta 2(Rio de Janeiro) venceu!\n");
+    printf("A Carta 2(Rio de Janeiro) venceu!\n\n");
   }
 
   return 0;
